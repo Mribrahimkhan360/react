@@ -1,0 +1,2 @@
+how to project run?
+npx vite
