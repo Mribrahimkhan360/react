@@ -1,23 +1,16 @@
-import {useRef} from 'react';
+import React from 'react';
 
 const App = () => {
   const formFun = (event) => {
     event.preventDefault();
   };
-  let myHead=useRef();
- 
 
- const change=()=>{
-  myHead.current.innerText="Hello";
- }
   return (
     <div>
-      <h1 ref={myHead}>Form Valiadition</h1>
       <form onSubmit={formFun}>
         <input type="text" placeholder="Enter text" />
-        <button type="submit" onClick={change}>Submit</button>
+        <button type="submit">Submit</button>
       </form>
-    
     </div>
   );
 };
